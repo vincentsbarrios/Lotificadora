@@ -16,7 +16,35 @@ public class Lotificadora {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        
+        Scanner anubis = new Scanner(System.in);
+        int opp;
+        Projecto_Lotificacion obj = new Projecto_Lotificacion();
+        
+        do{
+            System.out.println("\n*******MENU PRINCIPAL*******");
+            System.out.println("1. VENTA DEL LOTE");
+            System.out.println("2. REPORTE DEL LOTE");
+            System.out.println("3. SALIR");
+            System.out.print("\nINGRESE OPCION: ");
+            opp = anubis.nextInt();
+            
+            switch(opp){
+                case 1:
+                    System.out.println("\n*******VENTA DE LOTE*******");
+                    System.out.println("INGRESE COORDENAS");
+                    System.out.print("X = ");
+                    int x = anubis.nextInt();
+                    System.out.print("Y = ");
+                    int y = anubis.nextInt();
+                    obj.ventaLote(x, y);
+                    break;
+                case 2:
+                    obj.reporte();
+                    break;
+            }//END SWITCH
+            
+        }while(opp != 3);
+    }//END MAIN
     
 }
