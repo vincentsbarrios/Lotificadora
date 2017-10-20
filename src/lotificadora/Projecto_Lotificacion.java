@@ -63,4 +63,20 @@ public class Projecto_Lotificacion {
         System.out.println(revenue);
     }
     
+    public void prinMap(){
+        for(int x=0;x<array.length;x++){
+            System.out.println("");
+        
+            for(int y=0;y<array.length;y++){
+                if(array[x][y] != null){
+                    System.out.print("   [X]   ");
+                }else{
+                    System.out.print("    [ ]    ");
+                }
+            }
+        }
+    }
+    
+    
+    
 }

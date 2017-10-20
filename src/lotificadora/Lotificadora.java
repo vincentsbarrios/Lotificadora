@@ -37,10 +37,11 @@ public class Lotificadora {
                     int x = anubis.nextInt();
                     System.out.print("Y = ");
                     int y = anubis.nextInt();
-                    obj.ventaLote(x, y);
+                    obj.ventaLote(x-1, y-1);
                     break;
                 case 2:
                     obj.reporte();
+                    obj.prinMap();
                     break;
             }//END SWITCH
             
